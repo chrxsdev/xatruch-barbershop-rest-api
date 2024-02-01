@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.1.5</version>
+        <version>3.5.6</version>
         <relativePath/>
     </parent>
     <groupId>dev.chrisjosue</groupId>
@@ -14,7 +14,7 @@
     <name>xatruch-barbershop-server</name>
     <description>xatruch-barbershop-server</description>
     <properties>
-        <java.version>21</java.version>
+        <java.version>25</java.version>
         <org.mapstruct.version>1.5.5.Final</org.mapstruct.version>
         <main.class>dev.chrisjosue.xatruchbarbershopapi.XatruchBarbershopServerApp</main.class>
     </properties>
@@ -177,6 +177,8 @@
                             -Amapstruct.defaultComponentModel=spring
                         </compilerArg>
                     </compilerArgs>
+                    <source>8</source>
+                    <target>8</target>
                 </configuration>
             </plugin>
         </plugins>

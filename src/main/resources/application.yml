@@ -8,12 +8,12 @@ server:
 
 spring:
   config:
-    import: env.properties
+    import: optional:env.properties
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: update
     show-sql: true
   mail:
     default-encoding: UTF-8
@@ -30,7 +30,7 @@ spring:
     protocol: smtp
     test-connection: false
   profiles:
-    active: prod
+    active: dev
 
 cloudinary:
   CLOUD_NAME: ${CLOUD_NAME}

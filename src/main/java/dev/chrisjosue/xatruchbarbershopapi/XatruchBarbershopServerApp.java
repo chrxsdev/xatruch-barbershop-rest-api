@@ -5,7 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class XatruchBarbershopServerApp {
-    public static void main(String[] args) {
+    static void main(String[] args) {
+        IO.println("Xatruch Barbershop API Server is running...");
         SpringApplication.run(XatruchBarbershopServerApp.class, args);
     }
 }
