@@ -56,7 +56,7 @@ public class BookingFacadeImpl implements BookingFacade {
         var bookSaved = bookingService.bookingSession(bookingSet, currentCart);
 
         /* Send Email with Detail */
-        emailService.sendBookingEmail(bookSaved);
+//        emailService.sendBookingEmail(bookSaved);
 
         // Map to bookingDto
         return domainToBookingDtoMapper.toDto(bookSaved);
